@@ -4,10 +4,11 @@ It echoes any incoming text messages.
 """
 
 import logging
+import os
 
 from aiogram import Bot, Dispatcher, executor, types
 
-API_TOKEN = 'BOT TOKEN HERE'
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
